@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0; /* Default background color */
+  transition: background-color 0.3s;
+  background-image: url(boris-karloff-perfect-.png);
+  background-position-x: right;
+}
+body .game-container {
+transform: translateX(-300px);
+}
+
+.game-container {
+  width: 30vw;
+  text-align: center;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 3.9rem;
+  color: #333;
+}
+
+.modes {
+  margin-bottom: 20px;
+}
+
+.modes button {
+  background-color:darkgoldenrod;
+  color: black;
+  padding: 8px 16px;
+  font-size: 22px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+ .dark-mode .players {
+  color:black;
+}
+
+.players p {
+  font-weight: bold;
+  margin: 5px;
+  margin-bottom: 10px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 5px;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cell:hover {
+  background-color: lightgray;
+}
+
+#status {
+  
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.dark-mode #status {
+  color:black;
+}
+
+
+
+#resetBtn {
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#resetBtn:hover {
+  background-color: #2980b9;
+}
+
+/* Dark Mode styles */
+.dark-mode {
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+.dark-mode .cell {
+  border-color: #666;
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+.dark-mode .cell:hover {
+  background-color: #333;
+}
+
+.dark-mode #resetBtn {
+  background-color: #2980b9;
+}
+
+.dark-mode #resetBtn:hover {
+  background-color: black;
+}
